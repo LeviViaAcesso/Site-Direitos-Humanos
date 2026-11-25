@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O Impacto da Mídia na Percepção da Diversidade</title>
+<style>
+:root{--bg:#fbf8fc;--surf:#fff;--ink:#241b30;--mut:#6a5f78;--line:#e3dbed;--a1:#e0457b;--a2:#f5a524;--a3:#2fa37a;--a4:#2f7be0;--a5:#7a46d1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17121f;--surf:#211a2d;--ink:#f1ecf8;--mut:#b3a8c4;--line:#3a3050;--a1:#ff6b9b;--a2:#ffbf47;--a3:#4fcf9f;--a4:#6aa5ff;--a5:#a67dff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17121f;--surf:#211a2d;--ink:#f1ecf8;--mut:#b3a8c4;--line:#3a3050;--a1:#ff6b9b;--a2:#ffbf47;--a3:#4fcf9f;--a4:#6aa5ff;--a5:#a67dff;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 Georgia,"Times New Roman",serif}
+h1,h2,h3,nav,.tag,.btn{font-family:"Trebuchet MS","Segoe UI",Helvetica,Arial,sans-serif}
+.bar{height:6px;background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3),var(--a4),var(--a5))}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:1000px;margin:auto;display:flex;gap:4px;overflow-x:auto;padding:10px 16px;font-size:14px}
+nav a{white-space:nowrap;color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:99px}
+nav a:hover,nav a:focus-visible{background:var(--line);color:var(--ink);outline:none}
+main{max-width:1000px;margin:auto;padding:0 20px}
+section{padding:72px 0 8px}
+.hero{padding:80px 0 40px}
+h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.08;margin:0 0 24px;max-width:15em;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.15;margin:0 0 20px;letter-spacing:-.01em}
+h3{font-size:1.15rem;margin:32px 0 12px}
+p{max-width:68ch;margin:0 0 16px}
+blockquote{margin:0 0 28px;padding:6px 0 6px 20px;border-left:5px solid var(--a1);font-size:1.3rem;font-style:italic;max-width:30em}
+.tag{display:inline-block;font-size:13px;font-weight:700;padding:3px 12px;border-radius:99px;background:var(--a5);color:#fff;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:20px 0}
+.card{background:var(--surf);border:1px solid var(--line);border-left:6px solid var(--c,var(--a1));border-radius:6px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:1.05rem}.card p{margin:0;font-size:.95rem;color:var(--mut)}
+.card:nth-child(5n+1){--c:var(--a1)}.card:nth-child(5n+2){--c:var(--a2)}.card:nth-child(5n+3){--c:var(--a3)}.card:nth-child(5n+4){--c:var(--a4)}.card:nth-child(5n+5){--c:var(--a5)}
+.card b{font-family:"Trebuchet MS",Arial,sans-serif;display:block;margin-bottom:4px}
+ul.ok{padding-left:0;list-style:none;max-width:68ch}
+ul.ok li{padding:8px 0 8px 28px;border-bottom:1px solid var(--line);position:relative}
+ul.ok li::before{content:"";position:absolute;left:4px;top:18px;width:10px;height:10px;border-radius:50%;background:var(--a3)}
+.note{background:var(--surf);border:1px solid var(--line);border-radius:6px;padding:16px 20px;max-width:68ch;margin-top:20px}
+.tl{list-style:none;margin:24px 0;padding:0 0 0 26px;border-left:3px solid var(--line);max-width:760px}
+.tl li{position:relative;padding:0 0 28px 20px}
+.tl li::before{content:"";position:absolute;left:-36px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--c,var(--a1));border:3px solid var(--bg)}
+.tl li:nth-child(5n+1){--c:var(--a1)}.tl li:nth-child(5n+2){--c:var(--a2)}.tl li:nth-child(5n+3){--c:var(--a3)}.tl li:nth-child(5n+4){--c:var(--a4)}.tl li:nth-child(5n+5){--c:var(--a5)}
+.tl .yr{font:700 1.5rem "Trebuchet MS",Arial,sans-serif;color:var(--c)}
+.tl h3{margin:2px 0 6px}.tl p{margin:0;color:var(--mut)}
+.end{margin:72px 0 0;padding:56px 24px;text-align:center;background:linear-gradient(135deg,var(--a5),var(--a1));color:#fff;border-radius:10px}
+.end p{margin:0 auto 10px;max-width:30em}.end .big{font:700 clamp(1.5rem,4vw,2.2rem)/1.2 "Trebuchet MS",Arial,sans-serif}
+footer{max-width:1000px;margin:40px auto 0;padding:24px 20px 40px;color:var(--mut);font-size:14px;font-family:"Trebuchet MS",Arial,sans-serif}
+footer a{color:var(--a4)}footer p{max-width:none;margin:0 0 8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header class="top"><nav aria-label="Seções">
+<a href="#inicio">Início</a><a href="#diversidade">Diversidade</a><a href="#midia">Na mídia</a><a href="#estereotipos">Estereótipos</a><a href="#representatividade">Representatividade</a><a href="#conquistas">Direitos humanos</a><a href="#respeito">Respeito</a><a href="#informacao">Informação</a>
+</nav></header>
+<main>
+<section id="inicio" class="hero">
+<h1>O Impacto da Mídia na Percepção da Diversidade</h1>
+<blockquote>“A forma como vemos o mundo também é influenciada pelo que assistimos, lemos e compartilhamos.”</blockquote>
+<p>A mídia está presente em nosso cotidiano, seja por meio da televisão, dos filmes, das séries, dos jornais ou das redes sociais. Ela influencia opiniões, comportamentos e a maneira como enxergamos diferentes grupos da sociedade.</p>
+<p>Quando falamos sobre diversidade sexual e de gênero, a representação na mídia possui um papel importante na construção de uma sociedade mais respeitosa e inclusiva. Entretanto, a falta de representatividade, os estereótipos e os preconceitos ainda estão presentes em diversos meios de comunicação.</p>
+<p>Este site busca apresentar como a mídia influencia a percepção da diversidade, destacando a importância da informação, da representatividade e do respeito às diferenças.</p>
+<p>Esse debate também é uma questão de direitos humanos. Toda pessoa tem direito à dignidade, à igualdade e a viver sem discriminação, e a forma como a mídia retrata cada grupo pode ajudar a proteger esses direitos ou a enfraquecê-los. Ao mostrar quem somos, a mídia também ajuda a decidir quem é respeitado.</p>
+<p>O tema é atual e está perto de nós: em 2026, a prefeitura de Itaquaquecetuba criou o Conselho e o Fundo Municipal da Diversidade Sexual para ampliar as políticas públicas e a proteção da população LGBTQIAPN+. Iniciativas como essa mostram que a diversidade está na pauta das cidades, das escolas e das redes sociais.</p>
+<h3>O que você vai encontrar aqui</h3>
+<div class="grid">
+<div class="card"><b><a href="#diversidade" style="color:inherit">Conceitos básicos</a></b><p>O que é diversidade, orientação sexual e identidade de gênero.</p></div>
+<div class="card"><b><a href="#midia" style="color:inherit">A mídia e os jovens</a></b><p>Como filmes, séries, jornais e redes sociais moldam nossa visão.</p></div>
+<div class="card"><b><a href="#estereotipos" style="color:inherit">Estereótipos</a></b><p>Quando a representação reforça preconceitos e desinformação.</p></div>
+<div class="card"><b><a href="#representatividade" style="color:inherit">Representatividade</a></b><p>Por que ser visto com respeito faz diferença.</p></div>
+<div class="card"><b><a href="#conquistas" style="color:inherit">Direitos humanos</a></b><p>Conquistas e desafios dos direitos LGBTQIAPN+ no Brasil.</p></div>
+<div class="card"><b><a href="#respeito" style="color:inherit">Atitudes</a></b><p>O que cada pessoa pode fazer, em especial os jovens.</p></div>
+</div>
+</section>
+
+<section id="diversidade">
+<span class="tag">O básico</span>
+<h2>O que é diversidade?</h2>
+<p>A diversidade representa a existência de diferentes características, identidades, culturas, experiências e formas de expressão entre as pessoas. Ela faz parte da sociedade e demonstra que cada indivíduo possui suas próprias particularidades.</p>
+<p>Quando falamos sobre diversidade sexual, estamos abordando as diferentes orientações sexuais, identidades de gênero e formas de expressão relacionadas à sexualidade humana.</p>
+<h3>O que é orientação sexual?</h3>
+<p>Orientação sexual é a maneira como uma pessoa sente atração afetiva, romântica e/ou sexual por outras pessoas. Alguns exemplos são:</p>
+<div class="grid">
+<div class="card"><b>Heterossexualidade</b><p>Atração por pessoas de gênero diferente.</p></div>
+<div class="card"><b>Homossexualidade</b><p>Atração por pessoas do mesmo gênero.</p></div>
+<div class="card"><b>Bissexualidade</b><p>Atração por mais de um gênero.</p></div>
+<div class="card"><b>Pansexualidade</b><p>Atração por pessoas independentemente do gênero.</p></div>
+</div>
+<h3>E identidade de gênero?</h3>
+<p>É a maneira como uma pessoa se reconhece em relação ao próprio gênero. É diferente de orientação sexual, pois uma diz respeito à identidade da pessoa e a outra à atração que ela sente.</p>
+</section>
+
+<section id="midia">
+<span class="tag">Mídia</span>
+<h2>Como a diversidade aparece na mídia?</h2>
+<p>A mídia possui grande influência na maneira como as pessoas conhecem e interpretam diferentes realidades. Filmes, séries, novelas, propagandas, jornais e redes sociais ajudam a construir opiniões sobre diversos assuntos, incluindo a diversidade sexual e de gênero.</p>
+<p>Ao longo dos anos, a presença de personagens LGBTQIAPN+ em produções audiovisuais e campanhas publicitárias aumentou, permitindo que diferentes histórias e experiências ganhassem visibilidade.</p>
+<p>Porém, essa representação ainda apresenta desafios. Em algumas produções, personagens são retratados de maneira superficial ou associados a características estereotipadas, o que pode reforçar preconceitos.</p>
+<h3>Como a mídia influencia os jovens?</h3>
+<p>A representação positiva pode contribuir para:</p>
+<ul class="ok">
+<li>Aumentar o conhecimento sobre a diversidade.</li>
+<li>Desenvolver empatia e compreensão.</li>
+<li>Combater ideias preconceituosas.</li>
+<li>Incentivar o respeito às diferenças.</li>
+<li>Fazer com que mais pessoas se sintam representadas.</li>
+</ul>
+<p>Entretanto, conteúdos discriminatórios ou informações falsas também podem contribuir para a disseminação de preconceitos.</p>
+</section>
+
+<section id="estereotipos">
+<span class="tag">Atenção</span>
+<h2>Quando a representação reforça preconceitos</h2>
+<p>Apesar dos avanços na representatividade, a mídia ainda pode reproduzir estereótipos relacionados à orientação sexual e à identidade de gênero. Os estereótipos são ideias generalizadas sobre determinado grupo de pessoas, que muitas vezes não correspondem à realidade e acabam limitando a maneira como esses indivíduos são percebidos pela sociedade.</p>
+<p>Isso acontece quando personagens são representados sempre da mesma maneira, quando sua orientação sexual é utilizada como motivo de piadas ou quando são reduzidos exclusivamente à sua identidade.</p>
+<h3>Exemplos de problemas na representação</h3>
+<div class="grid">
+<div class="card"><b>Generalização</b><p>Tratar todas as pessoas de determinado grupo como se tivessem os mesmos comportamentos.</p></div>
+<div class="card"><b>Ridicularização</b><p>Utilizar a orientação sexual de alguém como motivo de piadas ofensivas.</p></div>
+<div class="card"><b>Invisibilidade</b><p>Deixar determinados grupos de fora de produções e debates.</p></div>
+<div class="card"><b>Desinformação</b><p>Divulgar informações incorretas que podem alimentar preconceitos.</p></div>
+<div class="card"><b>Representação superficial</b><p>Apresentar personagens sem desenvolver suas histórias e personalidades.</p></div>
+</div>
+<h3>Quais são as consequências?</h3>
+<p>Essas representações podem influenciar a forma como os jovens interpretam a diversidade, contribuindo para julgamentos equivocados, exclusão social e discriminação.</p>
+<div class="note">É importante lembrar que a mídia não é a única responsável pela formação das opiniões das pessoas, mas pode ter um papel significativo nesse processo.</div>
+</section>
+
+<section id="representatividade">
+<span class="tag">Inclusão</span>
+<h2>Por que a representatividade importa?</h2>
+<p>A representatividade acontece quando diferentes grupos da sociedade possuem espaço, visibilidade e reconhecimento nos meios de comunicação. Na mídia, ela permite que pessoas com diferentes orientações sexuais e identidades de gênero tenham suas histórias apresentadas de maneira respeitosa e realista.</p>
+<p>Uma representação inclusiva ajuda a combater a invisibilidade social, amplia o conhecimento sobre diferentes experiências e contribui para uma sociedade mais consciente.</p>
+<h3>A importância da representatividade</h3>
+<div class="grid">
+<div class="card"><b>Visibilidade</b><p>Permite que diferentes grupos tenham suas histórias e experiências reconhecidas.</p></div>
+<div class="card"><b>Respeito</b><p>Incentiva o reconhecimento da dignidade e dos direitos de todas as pessoas.</p></div>
+<div class="card"><b>Inclusão</b><p>Ajuda a construir espaços de convivência mais acolhedores e igualitários.</p></div>
+<div class="card"><b>Conhecimento</b><p>Amplia o contato com diferentes realidades e contribui para combater a desinformação.</p></div>
+</div>
+<div class="note"><b>Representatividade não significa apenas quantidade.</b> É importante que as pessoas sejam representadas de maneira respeitosa, sem serem reduzidas a estereótipos ou utilizadas apenas para chamar atenção.</div>
+</section>
+
+<section id="conquistas">
+<span class="tag">Direitos humanos</span>
+<h2>Diversidade também é uma questão de direitos humanos</h2>
+<p>Os direitos humanos são aqueles que pertencem a toda pessoa, pelo simples fato de existir. Não dependem de orientação sexual, identidade de gênero, cor, religião ou classe social. Por isso, falar de diversidade sexual e de gênero é falar de dignidade, igualdade e proteção para todos.</p>
+<div class="grid">
+<div class="card"><b>Declaração Universal (1948)</b><p>Afirma que todos os seres humanos nascem livres e iguais em dignidade e direitos.</p></div>
+<div class="card"><b>Constituição de 1988</b><p>Tem a dignidade da pessoa humana como fundamento e busca promover o bem de todos, sem preconceitos e sem formas de discriminação.</p></div>
+<div class="card"><b>Princípios de Yogyakarta (2006)</b><p>Aplicam os direitos humanos internacionais à orientação sexual e à identidade de gênero.</p></div>
+</div>
+<p>É nesse contexto que se entendem as conquistas abaixo: cada uma delas é a aplicação de um direito que já pertencia a todas as pessoas, mas que precisou ser reconhecido na prática.</p>
+<h3>Os avanços dos direitos LGBTQIAPN+ no Brasil</h3>
+<p>A luta pelos direitos da população LGBTQIAPN+ no Brasil é marcada por importantes conquistas sociais, jurídicas e políticas. Ao longo dos anos, diferentes iniciativas contribuíram para ampliar o reconhecimento dos direitos, combater a discriminação e promover a inclusão.</p>
+<p>Entretanto, ainda existem desafios relacionados à violência, ao preconceito e à falta de políticas públicas suficientes.</p>
+<h3>Linha do tempo das conquistas</h3>
+<ol class="tl">
+<li><div class="yr">1990</div><h3>Despatologização da homossexualidade</h3><p>A Organização Mundial da Saúde retirou a homossexualidade da classificação de doenças.</p></li>
+<li><div class="yr">2011</div><h3>União homoafetiva</h3><p>O Supremo Tribunal Federal reconheceu a união estável entre pessoas do mesmo sexo.</p></li>
+<li><div class="yr">2018</div><h3>Reconhecimento da identidade de gênero</h3><p>A OMS publicou a CID-11, retirando a transexualidade da categoria de transtornos mentais. No Brasil, também houve o reconhecimento do direito à alteração de nome e gênero no registro civil sem necessidade de autorização judicial.</p></li>
+<li><div class="yr">2023</div><h3>Conselho da Diversidade Sexual em Curitiba</h3><p>Tomaram posse os conselheiros titulares e suplentes do Conselho Municipal da Diversidade Sexual de Curitiba, fortalecendo a participação do poder público e da sociedade civil.</p></li>
+<li><div class="yr">2024</div><h3>Projeto de Lei 2046/24</h3><p>A proposta apresentada pela deputada Daiana Santos busca estabelecer regras para garantir o respeito e os direitos da população LGBTQIAPN+. É uma proposta legislativa, e não uma lei já aprovada.</p></li>
+<li><div class="yr">2026</div><h3>Conselho e Fundo Municipal em Itaquaquecetuba</h3><p>A prefeitura anunciou a criação do Conselho e do Fundo Municipal da Diversidade Sexual, com o objetivo de ampliar políticas públicas de inclusão, cidadania e proteção.</p></li>
+</ol>
+<h3>Por que essas conquistas são importantes?</h3>
+<p>Elas demonstram que o reconhecimento dos direitos e a participação social são fundamentais para construir uma sociedade mais igualitária. Muitas vieram de decisões judiciais e de políticas de saúde, e hoje ganham força também no nível local, com conselhos e fundos municipais, como o de Itaquaquecetuba, coordenado pela Secretaria da Mulher, Direitos Humanos e Cidadania.</p>
+<h3>Direitos reconhecidos ainda precisam ser garantidos</h3>
+<p>Estudos sobre o tema alertam que a falta de estatísticas oficiais sistemáticas dificulta a criação de novas políticas públicas. Também apontam aumento de casos de HIV entre jovens, relatos de violência física e sexual e graves denúncias de tortura e privação de liberdade contra pessoas LGBTQIAPN+ em comunidades terapêuticas. Ou seja: ter o direito escrito não basta, é preciso que ele seja respeitado no dia a dia.</p>
+<h3>Dos direitos humanos à mídia</h3>
+<p>É aqui que o tema deste site se conecta com os direitos humanos. A mídia ajuda a formar a opinião pública, e a opinião pública influencia o respeito, ou o desrespeito, a esses direitos. Quando a mídia dá visibilidade com responsabilidade, ela informa sobre direitos conquistados, combate a invisibilidade e reforça a dignidade de todas as pessoas. Quando reproduz estereótipos, piadas ofensivas ou desinformação, alimenta o preconceito que ainda gera exclusão e violência. Informar bem também é uma forma de proteger direitos humanos.</p>
+<div class="note"><b>Vale diferenciar:</b> criar um conselho municipal não é o mesmo que implementar todas as políticas que ele pretende promover. O Conselho de Itaquaquecetuba terá participação igualitária entre governo e sociedade civil, e o Fundo vai financiar projetos de inclusão social, saúde, educação, emprego e combate à discriminação.</div>
+</section>
+
+<section id="respeito">
+<span class="tag">Atitude</span>
+<h2>O respeito começa com nossas atitudes</h2>
+<p>A construção de uma sociedade mais inclusiva depende não apenas de leis e políticas públicas, mas também das atitudes individuais e coletivas. Cada pessoa pode contribuir para combater o preconceito e promover o respeito à diversidade em seu cotidiano.</p>
+<h3>Como podemos fazer isso?</h3>
+<div class="grid">
+<div class="card"><b>Respeitar as diferenças</b><p>Compreender que cada pessoa possui sua própria identidade e suas experiências.</p></div>
+<div class="card"><b>Combater o preconceito</b><p>Não apoiar comentários, piadas ou atitudes discriminatórias.</p></div>
+<div class="card"><b>Buscar informações confiáveis</b><p>Conhecer os assuntos antes de compartilhar notícias ou opiniões.</p></div>
+<div class="card"><b>Valorizar a representatividade</b><p>Apoiar produções e campanhas que apresentam a diversidade com respeito.</p></div>
+<div class="card"><b>Promover o diálogo</b><p>Conversar sobre diversidade de maneira respeitosa e aberta.</p></div>
+<div class="card"><b>Não compartilhar desinformação</b><p>Verificar a origem das informações antes de divulgá-las.</p></div>
+</div>
+<h3>O papel dos jovens</h3>
+<p>Os jovens possuem um papel importante nesse processo, principalmente porque estão frequentemente conectados às redes sociais e a diferentes meios de comunicação. Ao consumir e compartilhar conteúdos de maneira consciente, podem contribuir para a disseminação de informações responsáveis e para a construção de ambientes mais respeitosos.</p>
+</section>
+
+<section id="informacao">
+<span class="tag">Conclusão</span>
+<h2>A informação também transforma a sociedade</h2>
+<p>A informação é uma ferramenta fundamental para combater o preconceito e ampliar o conhecimento sobre a diversidade sexual e de gênero.</p>
+<p>A mídia possui grande capacidade de alcançar pessoas e influenciar debates sociais. Por isso, é importante que os conteúdos divulgados sejam responsáveis, respeitosos e baseados em informações confiáveis.</p>
+<p>Quando utilizada de maneira consciente, a comunicação pode dar visibilidade a grupos historicamente marginalizados, divulgar conquistas, combater a desinformação e incentivar o respeito às diferenças. Por outro lado, quando utilizada de maneira irresponsável, pode contribuir para a reprodução de estereótipos e preconceitos.</p>
+<div class="end">
+<p class="big"><em>Diversidade não é motivo de preconceito. É motivo de respeito.</em></p>
+<p>Informação gera conhecimento. Conhecimento promove respeito.</p>
+</div>
+</section>
+</main>
+<footer>
+<p><b>Via de acesso – GF 578</b> · Integrantes: João Luis, Kauã Alves, Levi Nascimento e Marcus Vinicius.</p>
+<p>Materiais de base: <a href="https://www.itaquaquecetuba.sp.gov.br/noticias/ver.php?id=5551" target="_blank" rel="noopener">Itaquá cria Conselho e Fundo Municipal da Diversidade Sexual (24/06/2026)</a> · <a href="https://share.google/evjol3SLRW0GX7573" target="_blank" rel="noopener">Direitos humanos e diversidade sexual e de gênero no Brasil: avanços e desafios (25/06/2018)</a></p>
+</footer>
+</body>
+</html>
